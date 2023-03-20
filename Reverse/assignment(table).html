@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Reverse</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+        </tr>
+        <tr id="firstrow">
+            <td>rahul</td>
+            <td>12345</td>
+        </tr>
+        <tr id="secondrow">
+            <td>karan</td>
+            <td>54321</td>
+        </tr>
+    </table>
+    <button>Reverse</button>
+
+    <script>
+       let firstvalue=document.querySelector("#firstrow").innerHTML;
+       let secondvalue=document.querySelector("#secondrow").innerHTML;
+       let btn=document.querySelector("button");
+       let c=firstvalue;
+
+       btn.onclick=()=>{
+        document.querySelector("#firstrow").innerHTML=secondvalue;
+        document.querySelector("#secondrow").innerHTML=c;
+        console.log(c)
+       }
+
+
+    </script>
+
+
+
+</body>
+</html>
